@@ -1,0 +1,77 @@
+@media screen and (max-width: 800px) {
+
+  /* ..........UTILITIES.......... */
+
+  /* Spacing */
+
+  .section-spaced {
+    padding: 40px 0px;
+  }
+
+  .divider-spaced {
+    padding: 80px 0px;
+  }
+
+  /* Containers */
+
+  #dream-banner .container {
+    flex-direction: column;
+  }
+
+  .icon-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .service-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-footer-section {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10px;
+  }
+
+  .double-col-row {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ..........HOME PAGE.......... */
+
+  /* Showcase Carousel */
+
+  #carousel img {
+    height: 50vh;
+  }
+
+  /* Main Showcase Banner */
+
+  #dream-banner {
+    text-align: center;
+  }
+
+  #dream-banner button {
+    margin-top: 20px;
+  }
+
+  /* Company Introduction */
+
+  #welcome-text {
+    margin-top: 20px;
+  }
+
+  /* ..........ABOUT PAGE.......... */
+
+  #history-img {
+    height: 300px;
+  }
+
+  #history-text {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+  
+}

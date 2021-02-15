@@ -1,0 +1,55 @@
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+
+  /* ..........UTILITIES.......... */
+
+  /* Spacing */
+
+  .section-spaced {
+    padding: 100px 0px;
+  }
+
+  .divider-spaced {
+    padding: 150px 0px;
+  }
+
+  /* bootstrap overrides */
+
+  .container {
+    min-width: 70%;
+  }
+
+  /* Containers */
+
+  .service-boxes {
+    grid-gap: 40px;
+  }
+
+  .gallery-grid {
+    grid-gap: 40px;
+  }
+
+  /* ..........GLOBALS.......... */
+
+  html {
+    font-size: 180%;
+  }
+
+  /* ..........IMAGES.......... */
+
+  .service-boxes img {
+    height: 500px;
+  }
+
+  .navbar img {
+    width: 200px;
+  }
+
+  #inspiration-carousel img {
+    height: 500px;
+  }
+
+  .gallery-grid img {
+    height: 500px;
+  }
+
+}

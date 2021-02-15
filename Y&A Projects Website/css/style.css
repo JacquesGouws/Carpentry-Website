@@ -1,0 +1,442 @@
+/* ..........IMPORTS.......... */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+
+/* ..........CUSTOM PROPERTIES.......... */
+
+:root {
+  --bg-gray: white;
+  --bg-darker-gray: #f2f2f2;
+  --bg-dark-brown: #3c2f2f;
+  --bg-light-brown: #4b3832;
+  --bg-transparent-black: rgb(0, 0, 0, 0.5);
+  --bg-transparent: transparent;
+  --bg-black: #333333;
+  --txt-orange: orange;
+}
+
+/* ..........UTILITY CLASSES.......... */
+
+/* Text colors */
+
+.txt-orange {
+  color: var(--txt-orange);
+}
+
+.txt-white {
+  color: white;
+}
+
+.txt-black {
+  color: var(--bg-black);
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+/* Background Colors */
+
+.bg-light-gray {
+  background-color: var(--bg-gray);
+}
+
+.bg-darker-gray {
+  background-color: var(--bg-darker-gray);
+}
+
+.bg-transparent-black {
+  background-color: var(--bg-transparent-black);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-dark-brown {
+  background-color: var(--bg-dark-brown);
+}
+
+.bg-light-brown {
+  background-color: var(--bg-light-brown);
+}
+
+.bg-black {
+  background-color: #333333;
+}
+
+/* Overlays */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Spacing */
+
+.section-spaced {
+  padding: 60px 0px;
+}
+
+.divider-spaced {
+  padding: 80px 0px;
+}
+
+/* Containers */
+
+.banner-divider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.service-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 40px;
+}
+
+.primary-footer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.double-col-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+
+.showcase-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#process-complete {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Images */
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Buttons */
+
+.primary-btn {
+  color: orange;
+  border-color: orange;
+}
+
+/* Bootstrap overrides */
+
+.card {
+  border: none;
+  text-align: center;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 270px;
+}
+
+/* ..........GLOBALS.......... */
+
+html {
+  font-size: 120%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-gray);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+i {
+  margin-bottom: 10px;
+}
+
+.icon-boxes i {
+  background-color: var(--bg-dark-brown);
+  color: white;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/* ..........SITEWIDE ELEMENTS.......... */
+
+/* Mini Banner */
+
+.cell-banner {
+  height: 10vh;
+  font-weight: bold;
+}
+
+.cell-banner .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+/* Navbar */
+
+.navbar li {
+  border-bottom: 1px solid lightgray;
+}
+
+.navbar li a {
+  font-weight: bold;
+}
+
+.navbar {
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.top {
+  background-color: white;
+}
+
+/* Page banners */
+
+.page-banner {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Dividing Banners */
+
+.page-banner-header {
+  color: white;
+  z-index: 2;
+  background-color: var(--bg-transparent-black);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dividing-banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.dividing-banner h2 {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+
+footer h4 {
+  margin-bottom: 20px;
+}
+
+.secondary-footer-section {
+  padding: 20px 0px;
+}
+
+/* ..........ANIMATIONS AND KEYFRAMES.......... */
+
+/* Link Hover */
+
+a:hover {
+  color: orange !important;
+}
+
+/* Picture Breathe */
+
+@keyframes background-breathe {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+.bg-breathe {
+  width: 100%;
+  height: 100%;
+  animation: background-breathe 25s linear infinite;
+}
+
+/* ..........HOME PAGE.......... */
+
+/* Showcase Carousel */
+
+#carousel img {
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.carousel-caption h1 {
+  padding: 40px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+/* Company Introduction */
+
+.icon-box {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Dividing Banners */
+
+.div-banner-img1 {
+  background-image: url(../img/photos/div-banner-img1.jpg);
+}
+
+.div-banner-img2 {
+  background-image: url(../img/photos/div-banner-img2.jpg);
+}
+
+/* ..........ABOUT PAGE.......... */
+
+/* Main Banner */
+
+.about-banner-img {
+  background-image: url(../img/photos/about-page-banner.jpg);
+}
+
+/* History Section */
+
+#history-img {
+  background-image: url(../img/photos/IMG-20210119-WA0018.jpg);
+}
+
+#history-text {
+  padding: 30px;
+}
+
+/* Choose Us Section */
+
+#choose-us-text {
+  margin-top: 40px;
+}
+
+/* Dividing Banner */
+
+.div-banner-img3 {
+  background-image: url(../img/photos/div-banner-img3.jpg);
+}
+
+/* Mission and Values Section */
+
+#mission-and-values .double-col-row {
+  grid-gap: 20px;
+}
+
+#mission-img {
+  background-image: url(../img/photos/mission.jpg);
+  height: 300px;
+}
+
+#vision-img {
+  background-image: url(../img/photos/vision.jpg);
+  height: 300px;
+}
+
+#vision-text,
+#mission-text {
+  padding: 30px;
+  text-align: center;
+}
+
+/* ..........SERVICES PAGE.......... */
+
+.services-banner-img {
+  background-image: url(../img/photos/services-page-banner.jpg);
+}
+
+.div-banner-img4 {
+  background-image: url(../img/photos/div-banner-img4.jpg);
+}
+
+/* ..........PROJECTS PAGE.......... */
+
+.projects-banner-img {
+  background-image: url(../img/photos/projects-page-banner.jpg);
+}
+
+#inspiration-carousel img {
+  object-fit: cover;
+}
+
+#inspiration-carousel {
+  margin-top: 40px;
+}
+
+/* ..........CONTACT PAGE.......... */
+
+.contact-banner-img{
+  background-image: url(../img/photos/contact-page-banner.jpg);
+}
+
+form input,
+textarea {
+  margin-bottom: 20px;
+}
+
+/* ..........PROCESS COMPLETED PAGE.......... */
+
+#back-to-home {
+  margin-top: 20px;
+}

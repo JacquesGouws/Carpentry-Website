@@ -1,0 +1,37 @@
+@media screen and (min-width: 1633px) and (max-width: 1920px){
+
+    /* ..........UTILITIES.......... */
+
+    /* Spacing */
+
+    .section-spaced{
+        padding: 80px;
+    }
+
+    .divider-spaced{
+        padding: 100px 0px;
+    }
+
+    /* Containers */
+
+    .service-boxes{
+        grid-gap: 30px;
+    }
+
+    .gallery-grid{
+        grid-gap: 30px;
+    }
+
+    /* ..........GLOBALS.......... */
+
+    html{
+        font-size: 140%;
+    }
+
+    /* ..........SITEWIDE ELEMENTS.......... */
+
+    .navbar img{
+        width: 140px;
+    }
+
+}
