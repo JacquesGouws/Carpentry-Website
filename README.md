@@ -1,4 +1,4 @@
-# Y-A-Projects-Carpentry-Website
+# Carpentry-Website
 A website for a small carpentry business called Y&A Projects.
 ### Skill Level:
 Junior to Intermediate
